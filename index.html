@@ -4,23 +4,18 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <title>Maria Andrade | DevOps & Software Engineer</title>
 
-    <title>Maria Andrade | DevOps Engineer</title>
+    <meta name="description"
+        content="Portfólio de Maria Andrade - DevOps, Cloud, Backend e Engenharia de Software">
 
-    <meta
-        name="description"
-        content="Portfólio de Maria Andrade">
+    <!-- Fonte -->
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link
-        rel="preconnect"
+    <link rel="preconnect"
         href="https://fonts.gstatic.com"
         crossorigin>
 
@@ -28,402 +23,231 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- ICONES -->
+    <!-- Font Awesome -->
 
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
 
     <link
         rel="stylesheet"
         href="style.css">
 
 </head>
-
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 <body>
 
 <header>
 
-    <nav class="container nav">
+    <div class="container">
 
-        <h2 class="logo">
+        <nav>
 
-            Maria Andrade
+            <a href="#" class="logo">
 
-        </h2>
+                Maria Andrade
 
-        <ul>
+            </a>
 
-            <li><a href="#about">Sobre</a></li>
+            <ul>
 
-            <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">Sobre</a></li>
 
-            <li><a href="#projects">Projetos</a></li>
+                <li><a href="#experience">Experiência</a></li>
 
-            <li><a href="#contact">Contato</a></li>
+                <li><a href="#skills">Tecnologias</a></li>
 
-        </ul>
+                <li><a href="#projects">Projetos</a></li>
 
-    </nav>
+                <li><a href="#contact">Contato</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
 
 </header>
 
-<!-- HERO -->
+<!-- ==========================
+HERO
+========================== -->
 
 <section class="hero">
 
-<div class="container hero-grid">
+    <div class="container hero-grid">
 
-<div class="hero-left">
+        <!-- TEXTO -->
 
-<p class="hello">
+        <div class="hero-left">
 
-Olá 👋
+            <span class="tag">
 
-</p>
+                👋 Olá, seja bem-vindo!
 
-<h1>
+            </span>
 
-Maria Andrade
+            <h1>
 
-</h1>
+                Maria Andrade
 
-<h2>
+            </h1>
 
-<span id="typing"></span>
+            <h2>
 
-</h2>
+                <span id="typing"></span>
 
-<p>
+            </h2>
 
-Estagiária de Implantação, estudante de Análise e Desenvolvimento
-de Sistemas e participante da 42 São Paulo.
+            <p>
 
-Atualmente construindo minha carreira em Engenharia de Plataforma,
-DevOps e Cloud.
+                Estagiária de Implantação, estudante de Análise e
+                Desenvolvimento de Sistemas e participante da
+                <strong>42 São Paulo</strong>.
 
-</p>
+            </p>
 
-<div class="hero-buttons">
+            <p>
 
-<a
-href="#projects"
-class="btn">
+                Construindo minha carreira em
+                <strong>DevOps</strong>,
+                <strong>Cloud</strong>,
+                <strong>Linux</strong>,
+                <strong>Automação</strong> e
+                <strong>Engenharia de Software</strong>.
 
-Projetos
+            </p>
 
-</a>
+            <div class="buttons">
 
-<a
-href="assets/cv/Maria_Andrade_CV.pdf"
-class="btn-outline">
+                <a href="#projects" class="btn">
 
-Currículo
+                    Ver Projetos
 
-</a>
+                </a>
 
-</div>
+                <a href="assets/cv/Maria_Andrade.pdf"
+                    class="btn-outline">
 
-<div class="social">
+                    Currículo
 
-<a href="https://github.com/MariaAndrade-25">
+                </a>
 
-<i class="fab fa-github"></i>
+            </div>
 
-</a>
+            <div class="social">
 
-<a href="#">
+                <a href="https://github.com/MariaAndrade-25"
+                    target="_blank">
 
-<i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
 
-</a>
+                </a>
 
-<a href="mailto:mariadeandrade@hotmail.com.br">
+                <a href="https://www.linkedin.com/"
+                    target="_blank">
 
-<i class="fa-solid fa-envelope"></i>
+                    <i class="fab fa-linkedin"></i>
 
-</a>
+                </a>
 
-</div>
+                <a href="mailto:mariadeandrade@hotmail.com.br">
 
-</div>
+                    <i class="fa-solid fa-envelope"></i>
 
-<!-- FOTO -->
+                </a>
 
-<div class="hero-right">
+            </div>
 
-<div class="photo-card">
+        </div>
 
-<img
-src="assets/img/profile.jpg"
-alt="Maria Andrade">
+        <!-- FOTO + TERMINAL -->
 
-</div>
+        <div class="hero-right">
 
-<div class="terminal">
+            <div class="photo">
 
-<div class="terminal-header">
+                <img
+                    src="assets/img/profile.jpg"
+                    alt="Maria Andrade">
 
-<span class="red"></span>
+            </div>
 
-<span class="yellow"></span>
+            <div class="terminal">
 
-<span class="green"></span>
+                <div class="terminal-header">
 
-</div>
+                    <span class="red"></span>
 
-<div class="terminal-body">
+                    <span class="yellow"></span>
 
-<p>
+                    <span class="green"></span>
 
-<span class="green-text">
+                </div>
 
-maria@ubuntu
+                <div class="terminal-body">
 
-</span>
+                    <p>
 
-:~$
+                        <span class="prompt">
 
-whoami
+                            maria@ubuntu
 
-</p>
+                        </span>
 
-<p>
+                        :~$
 
-Maria Andrade
+                        whoami
 
-</p>
+                    </p>
 
-<p>
+                    <p>
 
-<span class="green-text">
+                        Maria Andrade
 
-maria@ubuntu
+                    </p>
 
-</span>
+                    <br>
 
-:~$
+                    <p>
 
-cat skills.txt
+                        <span class="prompt">
 
-</p>
+                            maria@ubuntu
 
-<p>
+                        </span>
 
-Linux
+                        :~$
 
-</p>
+                        cat stack.txt
 
-<p>
+                    </p>
 
-Git
+                    <p>Linux</p>
 
-</p>
+                    <p>Git</p>
 
-<p>
+                    <p>GitHub</p>
 
-Python
+                    <p>Python</p>
 
-</p>
+                    <p>C</p>
 
-<p>
+                    <p>SQL</p>
 
-C
+                    <p>Docker (aprendendo)</p>
 
-</p>
+                    <p>AWS Cloud Practitioner</p>
 
-<p>
+                </div>
 
-SQL
+            </div>
 
-</p>
+        </div>
 
-<p>
-
-Cloud
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
-
-<!-- SOBRE -->
-
-<section
-id="about"
-class="section">
-
-<div class="container">
-
-<h2>
-
-Sobre Mim
-
-</h2>
-
-<p>
-
-Sou Estagiária de Implantação e estudante de Análise e Desenvolvimento
-de Sistemas.
-
-Atualmente atuo com implantação de soluções, validações,
-documentação técnica, análise de dados, automação de processos
-em Excel/VBA e comunicação entre equipes multidisciplinares.
-
-Na 42 São Paulo desenvolvo projetos em linguagem C, Linux,
-Git e resolução de problemas complexos.
-
-Meu objetivo é atuar com DevOps, Cloud e Engenharia de Plataforma.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- SKILLS -->
-
-<section
-id="skills"
-class="section">
-
-<div class="container">
-
-<h2>
-
-Tecnologias
-
-</h2>
-
-<div class="skills">
-
-<div><i class="fab fa-linux"></i> Linux</div>
-
-<div><i class="fab fa-git-alt"></i> Git</div>
-
-<div><i class="fab fa-github"></i> GitHub</div>
-
-<div><i class="fab fa-python"></i> Python</div>
-
-<div>C</div>
-
-<div>SQL</div>
-
-<div><i class="fab fa-aws"></i> AWS</div>
-
-<div>Flask</div>
-
-<div>Excel VBA</div>
-
-<div>Power BI</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- PROJETOS -->
-
-<section
-id="projects"
-class="section">
-
-<div class="container">
-
-<h2>
-
-Projetos
-
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>libft</h3>
-
-<p>
-
-Biblioteca padrão da linguagem C.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>ft_printf</h3>
-
-<p>
-
-Reimplementação do printf.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>get_next_line</h3>
-
-<p>
-
-Leitura eficiente de arquivos utilizando buffer.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTATO -->
-
-<section
-id="contact"
-class="section">
-
-<div class="container">
-
-<h2>
-
-Contato
-
-</h2>
-
-<p>
-
-Vamos conversar!
-
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>
-
-© 2026 Maria Andrade
-
-</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
