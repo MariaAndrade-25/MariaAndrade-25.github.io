@@ -1,57 +1,148 @@
-const text = [
+/* ==========================================
+   EFEITO DE DIGITAÇÃO
+========================================== */
+
+const texts = [
     "DevOps em Formação",
     "Linux • Git • Python",
-    "42 São Paulo",
-    "Infraestrutura & Automação"
+    "Cloud • Automação",
+    "42 São Paulo"
 ];
-
-let line = 0;
-let index = 0;
-let deleting = false;
 
 const typing = document.getElementById("typing");
 
-function typeEffect() {
+let textIndex = 0;
+let charIndex = 0;
+let deleting = false;
 
-    const current = text[line];
+function typeWriter() {
+
+    const current = texts[textIndex];
 
     if (!deleting) {
 
-        typing.innerHTML = current.substring(0, index);
+        typing.textContent = current.substring(0, charIndex);
 
-        index++;
+        charIndex++;
 
-        if (index > current.length) {
+        if (charIndex > current.length) {
 
             deleting = true;
 
-            setTimeout(typeEffect, 1500);
+            setTimeout(typeWriter, 1800);
 
             return;
-
         }
 
     } else {
 
-        typing.innerHTML = current.substring(0, index);
+        typing.textContent = current.substring(0, charIndex);
 
-        index--;
+        charIndex--;
 
-        if (index < 0) {
+        if (charIndex < 0) {
 
             deleting = false;
 
-            line++;
+            textIndex++;
 
-            if (line >= text.length)
-                line = 0;
-
+            if (textIndex >= texts.length)
+                textIndex = 0;
         }
 
     }
 
-    setTimeout(typeEffect, deleting ? 50 : 90);
-
+    setTimeout(typeWriter, deleting ? 45 : 90);
 }
 
-typeEffect();
+typeWriter();
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 40) {
+
+        header.style.background = "rgba(9,9,11,.95)";
+        header.style.boxShadow = "0 10px 30px rgba(0,0,0,.25)";
+
+    } else {
+
+        header.style.background = "rgba(9,9,11,.75)";
+        header.style.boxShadow = "none";
+
+    }
+
+});
+
+/* ==========================================
+   ANIMAÇÃO AO ROLAR
+========================================== */
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+}, {
+
+    threshold: .15
+
+});
+
+document.querySelectorAll(".section,.card,.skills div").forEach(el => {
+
+    el.classList.add("hidden");
+
+    observer.observe(el);
+
+});
+
+/* ==========================================
+   TERMINAL
+========================================== */
+
+const terminal = document.querySelector(".terminal-body");
+
+const commands = [
+
+`<p><span class="green-text">maria@ubuntu</span>:~$ pwd</p>
+<p>/home/maria</p>`,
+
+`<p><span class="green-text">maria@ubuntu</span>:~$ git status</p>
+<p>On branch main ✔</p>`,
+
+`<p><span class="green-text">maria@ubuntu</span>:~$ docker ps</p>
+<p>No containers running</p>`,
+
+`<p><span class="green-text">maria@ubuntu</span>:~$ whoami</p>
+<p>Maria Andrade</p>`,
+
+`<p><span class="green-text">maria@ubuntu</span>:~$ echo "Always Learning"</p>
+<p>Always Learning 🚀</p>`
+
+];
+
+let cmd = 0;
+
+setInterval(() => {
+
+    terminal.innerHTML = commands[cmd];
+
+    cmd++;
+
+    if (cmd >= commands.length)
+        cmd = 0;
+
+}, 3500);
