@@ -757,3 +757,41 @@ nav ul {
 
 
 }
+.project-links {
+
+    margin-top:25px;
+
+}
+
+
+.project-links a {
+
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    border:1px solid #38bdf8;
+
+    color:#38bdf8;
+
+    transition:.3s;
+
+}
+
+
+
+.project-links a:hover {
+
+
+    background:#38bdf8;
+
+    color:#020617;
+
+}
