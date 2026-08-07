@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+
+Sitemap: https://mariaandrade-25.github.io/sitemap.xml
+
+# Tempo de espera entre requisições
+Crawl-delay: 1
+
+# LinkedIn Bot
+User-agent: LinkedInBot
+Allow: /
+
+# Google Bot
+User-agent: Googlebot
+Allow: /
