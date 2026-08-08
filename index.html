@@ -3,503 +3,1269 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css?v=1.1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maria Andrade | DevOps & Software Engineer</title>
-    <meta name="description" content="Portfólio de Maria Andrade - DevOps, Cloud, Backend e Engenharia de Software">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
-    
-    <!-- Open Graph Tags (LinkedIn, Facebook, Twitter) -->
-    <meta property="og:title" content="Maria Andrade | DevOps & Software Engineer">
-    <meta property="og:description" content="Engenheira de Software, Estagiária de Implantação, estudante da 42 São Paulo, especializada em DevOps, Cloud, Linux e Automação.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mariaandrade-25.github.io">
-    <meta property="og:image" content="https://mariaandrade-25.github.io/assets/profile.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    
-    <!-- Twitter Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Maria Andrade | DevOps & Software Engineer">
-    <meta name="twitter:description" content="Engenheira de Software, Estagiária de Implantação, estudante da 42 São Paulo, especializada em DevOps, Cloud, Linux e Automação.">
-    <meta name="twitter:image" content="https://mariaandrade-25.github.io/assets/profile.jpg">
-    
-    <!-- Keywords -->
-    <meta name="keywords" content="DevOps, Cloud, Software Engineer, Linux, Python, C, Docker, AWS, GitHub, 42 São Paulo">
-    <meta name="author" content="Maria Andrade">
 
-    <!-- Fonte -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Portfólio de Maria Andrade — Engenharia de Software, DevOps, Cloud, Linux, Python e C.">
+
+    <meta
+        name="author"
+        content="Maria Andrade">
+
+    <meta
+        name="keywords"
+        content="Maria Andrade, DevOps, Engenharia de Software, Python, C, Linux, Docker, AWS, GitHub, 42 São Paulo">
+
+    <meta name="theme-color" content="#0a0a0a">
+
+    <title>Maria Andrade | Software Engineer & DevOps</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Maria Andrade | Software Engineer & DevOps">
+    <meta
+        property="og:description"
+        content="Portfólio de Maria Andrade — Engenharia de Software, DevOps, Cloud e Automação.">
+    <meta property="og:type" content="website">
+    <meta
+        property="og:url"
+        content="https://mariaandrade-25.github.io/">
+    <meta
+        property="og:image"
+        content="https://mariaandrade-25.github.io/assets/profile.jpg">
+
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-5+qxM8n5h0J5Tz7LhM5vY4W7F2H0JQ5J7T4xV7V5j2k1JQY5XK9w3X7kJ5T2R5L5Q5X5M5J5K5"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css?v=2.0">
 </head>
 
 <body>
 
-<!-- ========================== HEADER ========================== -->
+    <!-- =========================
+         HEADER
+    ========================== -->
 
-<header>
-    <div class="container">
-        <nav>
-            <a href="#" class="logo">Maria Andrade</a>
-            <ul class="nav-menu">
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#experience">Experiência</a></li>
-                <li><a href="#skills">Tecnologias</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </div>
-</header>
+    <header class="site-header">
+        <div class="container">
 
-<!-- ========================== HERO ========================== -->
+            <nav
+                class="navbar"
+                aria-label="Navegação principal">
 
-<section class="hero">
-    <div class="container hero-grid">
-        <!-- TEXTO -->
-        <div class="hero-left fade-in">
-            <span class="tag">👋 Olá, seja bem-vindo!</span>
-            <h1>Maria Andrade</h1>
-            <h2><span id="typing"></span></h2>
-            
-            <p>Engenheira de Software em formação, atuando como <strong>Estagiária de Implantação</strong>, com foco em <strong>DevOps</strong>, <strong>Cloud</strong>, <strong>Linux</strong>, <strong>Automação</strong> e <strong>Engenharia de Software</strong>.</p>
-            
-            <p>Participante da <strong>42 São Paulo</strong>, desenvolvendo projetos em <strong>C</strong>, <strong>Python</strong>, <strong>SQL</strong>, APIs REST e fundamentos de sistemas.</p>
-            
-            <div class="buttons">
-                <a href="#projects" class="btn">Ver Projetos</a>
-                <a href="assets/cv/Maria_Andrade.pdf" class="btn-outline" download="Maria_Andrade_CV.pdf">Currículo</a>
-            </div>
-            
-            <div class="social">
-                <a href="https://github.com/MariaAndrade-25" target="_blank" title="GitHub">
-                    <i class="fab fa-github"></i>
+                <a
+                    href="#home"
+                    class="logo"
+                    aria-label="Página inicial">
+                    Maria Andrade
                 </a>
-                <a href="https://www.linkedin.com/in/maria-andrade-97241i" target="_blank" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:mariadeandrade@hotmail.com.br" title="Email">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-            </div>
-        </div>
-        
-        <!-- FOTO + TERMINAL -->
-        <div class="hero-right fade-in">
-            <div class="photo">
-                <img src="assets/profile.jpg" alt="Maria Andrade">
-            </div>
-            
-            <div class="terminal">
-                <div class="terminal-header">
-                    <span class="red"></span>
-                    <span class="yellow"></span>
-                    <span class="green"></span>
-                </div>
-                <div class="terminal-body">
-                    <p><span class="prompt">maria@ubuntu</span>:~$ whoami</p>
-                    <p>Maria Andrade</p>
-                    <br>
-                    <p><span class="prompt">maria@ubuntu</span>:~$ cat profile.json</p>
-                    <p>{</p>
-                    <p>&nbsp;&nbsp;"role": "Software Engineer",</p>
-                    <p>&nbsp;&nbsp;"focus": [</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;"DevOps",</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;"Cloud",</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;"Automation"</p>
-                    <p>&nbsp;&nbsp;],</p>
-                    <p>&nbsp;&nbsp;"languages": [</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;"C",</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;"Python",</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;"SQL"</p>
-                    <p>&nbsp;&nbsp;],</p>
-                    <p>&nbsp;&nbsp;"tools": [</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;"Linux",</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;"Git",</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;"Docker",</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;"AWS"</p>
-                    <p>&nbsp;&nbsp;]</p>
-                    <p>}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- ========================== ABOUT ========================== -->
+                <button
+                    class="hamburger"
+                    type="button"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="nav-menu">
 
-<section id="about" class="about">
-    <div class="container">
-        <div class="section-header fade-in">
-            <h2>Sobre Mim</h2>
-            <div class="line"></div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul
+                    class="nav-menu"
+                    id="nav-menu">
+
+                    <li>
+                        <a href="#about">Sobre</a>
+                    </li>
+
+                    <li>
+                        <a href="#experience">Experiência</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills">Tecnologias</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">Projetos</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
         </div>
-        
-        <div class="about-grid fade-in">
-            <div class="about-text">
-                <p>Minha trajetória começou na área da saúde, onde desenvolvi pensamento analítico, resolução de problemas e experiência em ambientes de alta complexidade.</p>
-                
-                <p>Atualmente estou em transição para tecnologia, construindo minha carreira em <strong>Engenharia de Software</strong>, <strong>DevOps</strong> e <strong>Cloud</strong>, através da <strong>42 São Paulo</strong>, projetos próprios e estudos contínuos.</p>
-                
-                <p>Minha paixão é aprender, resolver problemas complexos e criar soluções que façam diferença. Estou sempre buscando novos desafios e oportunidades para crescer profissionalmente.</p>
-            </div>
-            
-            <div class="about-stats">
-                <div class="stat fade-in">
-                    <h3>2+</h3>
-                    <p>Anos em Transição Tech</p>
-                </div>
-                <div class="stat fade-in">
-                    <h3>10+</h3>
-                    <p>Projetos Desenvolvidos</p>
-                </div>
-                <div class="stat fade-in">
-                    <h3>100%</h3>
-                    <p>Dedicação</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </header>
 
-<!-- ========================== EXPERIENCE ========================== -->
 
-<section id="experience" class="experience">
-    <div class="container">
-        <div class="section-header fade-in">
-            <h2>Experiência Profissional</h2>
-            <div class="line"></div>
-        </div>
-        
-        <div class="experience-timeline fade-in">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Estagiária de Implantação</h3>
-                    <p class="company">Atuação Corporativa | Atual</p>
-                    <p>Atuação com tecnologia, processos, análise de dados, integração de sistemas e suporte à implantação de soluções. Experiência prática em DevOps, infraestrutura e automação.</p>
-                    <div class="tags">
-                        <span class="tag-tech">DevOps</span>
-                        <span class="tag-tech">Infraestrutura</span>
-                        <span class="tag-tech">Automação</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Estudante 42 São Paulo</h3>
-                    <p class="company">42 São Paulo | 2023 - Presente</p>
-                    <p>Programa de formação intensivo focado em programação prática. Desenvolvendo habilidades em C, Python, algoritmos e problem solving através de projetos desafiadores.</p>
-                    <div class="tags">
-                        <span class="tag-tech">C</span>
-                        <span class="tag-tech">Python</span>
-                        <span class="tag-tech">Algoritmos</span>
-                        <span class="tag-tech">Problem Solving</span>
-                    </div>
-                </div>
-            </div>
+    <main>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Engenheira de Software em Formação</h3>
-                    <p class="company">Autodidata | 2022 - Presente</p>
-                    <p>Desenvolvimento contínuo de projetos pessoais, estudos independentes em DevOps, Cloud, Linux e arquitetura de sistemas. Criação de APIs, automação de processos e infraestrutura.</p>
-                    <div class="tags">
-                        <span class="tag-tech">Python</span>
-                        <span class="tag-tech">SQL</span>
-                        <span class="tag-tech">APIs REST</span>
-                        <span class="tag-tech">Docker</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        <!-- =========================
+             HERO
+        ========================== -->
 
-<!-- ========================== SKILLS ========================== -->
+        <section
+            id="home"
+            class="hero"
+            aria-labelledby="hero-title">
 
-<section id="skills" class="skills">
-    <div class="container">
-        <div class="section-header fade-in">
-            <h2>Tecnologias & Skills</h2>
-            <div class="line"></div>
-        </div>
-        
-        <div class="skills-grid">
-            <div class="skill-category fade-in">
-                <h3>💻 Programação</h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <div class="skill-name">C</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Python</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">SQL</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">REST APIs</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="skill-category fade-in">
-                <h3>🚀 DevOps & Cloud</h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <div class="skill-name">Linux</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Git/GitHub</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Docker</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">AWS</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 65%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="skill-category fade-in">
-                <h3>🛠️ Ferramentas</h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <div class="skill-name">CI/CD</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">GitHub Actions</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Terminal/Shell</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Automação</div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+            <div class="container hero-grid">
 
-<!-- ========================== PROJECTS ========================== -->
+                <div class="hero-left fade-in">
 
-<section id="projects" class="projects">
-    <div class="container">
-        <div class="section-header fade-in">
-            <h2>Projetos em Destaque</h2>
-            <div class="line"></div>
-        </div>
-        
-        <div class="projects-grid">
-            <!-- GET NEXT LINE -->
-            <div class="project-card fade-in">
-                <div class="project-content">
-                    <h3>Get Next Line - 42 São Paulo</h3>
-                    <p>Implementação em C para leitura eficiente de arquivos utilizando memória dinâmica, ponteiros e variáveis static. Projeto fundamental da 42 São Paulo.</p>
-                    <div class="project-tags">
-                        <span>C</span>
-                        <span>Unix</span>
-                        <span>Memory Management</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/MariaAndrade-25/get_next_line" target="_blank">
-                            <i class="fab fa-github"></i> Código
+                    <span class="tag">
+                        👋 Olá, eu sou a Maria
+                    </span>
+
+                    <h1 id="hero-title">
+                        Maria Andrade
+                    </h1>
+
+                    <h2>
+                        <span id="typing">
+                            Software Engineer
+                        </span>
+                    </h2>
+
+                    <p class="hero-description">
+                        Desenvolvedora em formação com foco em
+                        <strong>Software Engineering</strong>,
+                        <strong>DevOps</strong>,
+                        <strong>Cloud</strong> e
+                        <strong>Automação</strong>.
+                    </p>
+
+                    <p>
+                        Atualmente atuo como
+                        <strong>Estagiária de Implantação</strong>
+                        e estudo na
+                        <strong>42 São Paulo</strong>,
+                        desenvolvendo projetos em C, Python,
+                        SQL, APIs REST e fundamentos de sistemas.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a
+                            href="#projects"
+                            class="btn">
+                            Ver projetos
                         </a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- REST API -->
-            <div class="project-card fade-in">
-                <div class="project-content">
-                    <h3>REST API Biblioteca Digital</h3>
-                    <p>API backend desenvolvida em Flask com SQLAlchemy e SQLite seguindo arquitetura REST completa com endpoints de CRUD.</p>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>SQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/MariaAndrade-25/biblioteca-api-flask" target="_blank">
-                            <i class="fab fa-github"></i> Código
+                        <a
+                            href="assets/cv/Maria_Andrade.pdf"
+                            class="btn-outline"
+                            download="Maria_Andrade_CV.pdf">
+                            Baixar currículo
                         </a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- CI/CD -->
-            <div class="project-card fade-in">
-                <div class="project-content">
-                    <h3>Pipeline CI/CD com GitHub Actions</h3>
-                    <p>Automação completa de testes, build e deploy utilizando GitHub Actions. Implementação de integração contínua para qualidade de código.</p>
-                    <div class="project-tags">
-                        <span>GitHub Actions</span>
-                        <span>CI/CD</span>
-                        <span>DevOps</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/MariaAndrade-25?tab=repositories" target="_blank">
-                            <i class="fab fa-github"></i> Código
+
+                    <div
+                        class="social"
+                        aria-label="Redes sociais">
+
+                        <a
+                            href="https://github.com/MariaAndrade-25"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub">
+
+                            <i class="fab fa-github"></i>
                         </a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Portfólio -->
-            <div class="project-card fade-in">
-                <div class="project-content">
-                    <h3>Portfólio Pessoal - Este Site!</h3>
-                    <p>Portfólio responsivo com design moderno, animações suaves e otimização para SEO. Desenvolvido com HTML5, CSS3 e JavaScript vanilla.</p>
-                    <div class="project-tags">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/MariaAndrade-25/MariaAndrade-25.github.io" target="_blank">
-                            <i class="fab fa-github"></i> Código
+                        <a
+                            href="https://www.linkedin.com/in/maria-andrade-97241i"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+
+                            <i class="fab fa-linkedin"></i>
                         </a>
+
+                        <a
+                            href="mailto:mariadeandrade@hotmail.com.br"
+                            aria-label="Enviar e-mail">
+
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
+
+                <!-- HERO RIGHT -->
+
+                <div class="hero-right fade-in">
+
+                    <div class="photo">
+                        <img
+                            src="assets/profile.jpg"
+                            alt="Foto de Maria Andrade"
+                            width="400"
+                            height="400"
+                            loading="eager">
+                    </div>
+
+
+                    <div
+                        class="terminal"
+                        aria-label="Perfil técnico de Maria Andrade">
+
+                        <div class="terminal-header">
+
+                            <span class="red"></span>
+                            <span class="yellow"></span>
+                            <span class="green"></span>
+
+                        </div>
+
+                        <div class="terminal-body">
+
+                            <p>
+                                <span class="prompt">
+                                    maria@ubuntu
+                                </span>:~$ whoami
+                            </p>
+
+                            <p>
+                                Maria Andrade
+                            </p>
+
+                            <br>
+
+                            <p>
+                                <span class="prompt">
+                                    maria@ubuntu
+                                </span>:~$ cat profile.json
+                            </p>
+
+                            <p>{</p>
+
+                            <p>
+                                &nbsp;&nbsp;"role":
+                                "Software Engineer",
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;"focus": [
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"DevOps",
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"Cloud",
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"Automation"
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;],
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;"languages": [
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"C",
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"Python",
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"SQL"
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;],
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;"tools": [
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"Linux",
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"Git",
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"Docker",
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;"AWS"
+                            </p>
+
+                            <p>
+                                &nbsp;&nbsp;]
+                            </p>
+
+                            <p>}</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
-        </div>
-    </div>
-</section>
 
-<!-- ========================== CONTACT ========================== -->
+        </section>
 
-<section id="contact" class="contact">
-    <div class="container">
-        <div class="section-header fade-in">
-            <h2>Vamos Conversar!</h2>
-            <div class="line"></div>
-        </div>
-        
-        <div class="contact-wrapper fade-in">
-            <div class="contact-info">
-                <h3>Fale Comigo</h3>
-                <p>Estou aberta a oportunidades, colaborações e conversas sobre tecnologia, DevOps e Engenharia de Software. Sinta-se à vontade para entrar em contato!</p>
-                
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h4>Email</h4>
-                        <p><a href="mailto:mariadeandrade@hotmail.com.br">mariadeandrade@hotmail.com.br</a></p>
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section
+            id="about"
+            class="about"
+            aria-labelledby="about-title">
+
+            <div class="container">
+
+                <div class="section-header fade-in">
+
+                    <span class="section-label">
+                        01
+                    </span>
+
+                    <h2 id="about-title">
+                        Sobre mim
+                    </h2>
+
+                    <div class="line"></div>
+
+                </div>
+
+
+                <div class="about-grid fade-in">
+
+                    <div class="about-text">
+
+                        <p>
+                            Minha trajetória profissional começou na área
+                            da saúde, onde desenvolvi pensamento analítico,
+                            resolução de problemas e experiência em
+                            ambientes de alta complexidade.
+                        </p>
+
+                        <p>
+                            Hoje estou em transição para tecnologia,
+                            construindo minha carreira em
+                            <strong>Engenharia de Software</strong>,
+                            <strong>DevOps</strong> e
+                            <strong>Cloud</strong>.
+                        </p>
+
+                        <p>
+                            Minha formação combina a experiência prática
+                            da <strong>42 São Paulo</strong>, projetos
+                            próprios e aprendizado contínuo em programação,
+                            infraestrutura e automação.
+                        </p>
+
                     </div>
-                </div>
-                
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h4>Localização</h4>
-                        <p>São Paulo, SP - Brasil</p>
+
+
+                    <div class="about-stats">
+
+                        <div class="stat">
+
+                            <h3>42</h3>
+
+                            <p>
+                                São Paulo
+                            </p>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <h3>10+</h3>
+
+                            <p>
+                                Projetos
+                            </p>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <h3>∞</h3>
+
+                            <p>
+                                Aprendizado
+                            </p>
+
+                        </div>
+
                     </div>
+
                 </div>
-                
-                <div class="social-large">
-                    <a href="https://github.com/MariaAndrade-25" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/maria-andrade-97241i" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:mariadeandrade@hotmail.com.br">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
+
             </div>
-            
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <input type="text" placeholder="Seu nome" required>
+
+        </section>
+
+
+        <!-- =========================
+             EXPERIENCE
+        ========================== -->
+
+        <section
+            id="experience"
+            class="experience"
+            aria-labelledby="experience-title">
+
+            <div class="container">
+
+                <div class="section-header fade-in">
+
+                    <span class="section-label">
+                        02
+                    </span>
+
+                    <h2 id="experience-title">
+                        Experiência
+                    </h2>
+
+                    <div class="line"></div>
+
                 </div>
-                
-                <div class="form-group">
-                    <input type="email" placeholder="Seu email" required>
+
+
+                <div class="experience-timeline fade-in">
+
+                    <article class="timeline-item">
+
+                        <div
+                            class="timeline-dot"
+                            aria-hidden="true">
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span class="experience-date">
+                                Atual
+                            </span>
+
+                            <h3>
+                                Estagiária de Implantação
+                            </h3>
+
+                            <p class="company">
+                                Tecnologia & Implantação
+                            </p>
+
+                            <p>
+                                Atuação com processos, análise de dados,
+                                integração de sistemas e suporte à
+                                implantação de soluções tecnológicas.
+                            </p>
+
+                            <div class="tags">
+
+                                <span class="tag-tech">
+                                    Implantação
+                                </span>
+
+                                <span class="tag-tech">
+                                    Dados
+                                </span>
+
+                                <span class="tag-tech">
+                                    Integração
+                                </span>
+
+                                <span class="tag-tech">
+                                    Automação
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div
+                            class="timeline-dot"
+                            aria-hidden="true">
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span class="experience-date">
+                                2023 — Atual
+                            </span>
+
+                            <h3>
+                                Estudante
+                            </h3>
+
+                            <p class="company">
+                                42 São Paulo
+                            </p>
+
+                            <p>
+                                Formação baseada em projetos práticos,
+                                com desenvolvimento de habilidades em C,
+                                algoritmos, memória, Unix, Git e
+                                resolução de problemas.
+                            </p>
+
+                            <div class="tags">
+
+                                <span class="tag-tech">
+                                    C
+                                </span>
+
+                                <span class="tag-tech">
+                                    Unix
+                                </span>
+
+                                <span class="tag-tech">
+                                    Git
+                                </span>
+
+                                <span class="tag-tech">
+                                    Problem Solving
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div
+                            class="timeline-dot"
+                            aria-hidden="true">
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span class="experience-date">
+                                Estudos contínuos
+                            </span>
+
+                            <h3>
+                                Desenvolvimento de Software
+                            </h3>
+
+                            <p class="company">
+                                Projetos pessoais
+                            </p>
+
+                            <p>
+                                Desenvolvimento de APIs, aplicações,
+                                automações e projetos de estudo utilizando
+                                Python, SQL, Flask, Docker e tecnologias
+                                relacionadas à engenharia de software.
+                            </p>
+
+                            <div class="tags">
+
+                                <span class="tag-tech">
+                                    Python
+                                </span>
+
+                                <span class="tag-tech">
+                                    Flask
+                                </span>
+
+                                <span class="tag-tech">
+                                    SQL
+                                </span>
+
+                                <span class="tag-tech">
+                                    Docker
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
                 </div>
-                
-                <div class="form-group">
-                    <input type="text" placeholder="Assunto" required>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section
+            id="skills"
+            class="skills"
+            aria-labelledby="skills-title">
+
+            <div class="container">
+
+                <div class="section-header fade-in">
+
+                    <span class="section-label">
+                        03
+                    </span>
+
+                    <h2 id="skills-title">
+                        Tecnologias
+                    </h2>
+
+                    <div class="line"></div>
+
                 </div>
-                
-                <div class="form-group">
-                    <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+
+
+                <div class="skills-grid">
+
+                    <div class="skill-category fade-in">
+
+                        <h3>
+                            💻 Desenvolvimento
+                        </h3>
+
+                        <div class="skill-list">
+
+                            <span class="skill-item">
+                                C
+                            </span>
+
+                            <span class="skill-item">
+                                Python
+                            </span>
+
+                            <span class="skill-item">
+                                SQL
+                            </span>
+
+                            <span class="skill-item">
+                                REST APIs
+                            </span>
+
+                            <span class="skill-item">
+                                Flask
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-category fade-in">
+
+                        <h3>
+                            ☁️ DevOps & Cloud
+                        </h3>
+
+                        <div class="skill-list">
+
+                            <span class="skill-item">
+                                Linux
+                            </span>
+
+                            <span class="skill-item">
+                                Git
+                            </span>
+
+                            <span class="skill-item">
+                                GitHub
+                            </span>
+
+                            <span class="skill-item">
+                                Docker
+                            </span>
+
+                            <span class="skill-item">
+                                AWS
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-category fade-in">
+
+                        <h3>
+                            ⚙️ Automação & Ferramentas
+                        </h3>
+
+                        <div class="skill-list">
+
+                            <span class="skill-item">
+                                CI/CD
+                            </span>
+
+                            <span class="skill-item">
+                                GitHub Actions
+                            </span>
+
+                            <span class="skill-item">
+                                Shell
+                            </span>
+
+                            <span class="skill-item">
+                                Automação
+                            </span>
+
+                            <span class="skill-item">
+                                Git
+                            </span>
+
+                        </div>
+
+                    </div>
+
                 </div>
-                
-                <button type="submit" class="btn">Enviar Mensagem</button>
-            </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section
+            id="projects"
+            class="projects"
+            aria-labelledby="projects-title">
+
+            <div class="container">
+
+                <div class="section-header fade-in">
+
+                    <span class="section-label">
+                        04
+                    </span>
+
+                    <h2 id="projects-title">
+                        Projetos
+                    </h2>
+
+                    <div class="line"></div>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- GET NEXT LINE -->
+
+                    <article class="project-card fade-in">
+
+                        <div class="project-content">
+
+                            <span class="project-number">
+                                01
+                            </span>
+
+                            <h3>
+                                Get Next Line
+                            </h3>
+
+                            <p>
+                                Implementação em C de uma função para
+                                leitura de arquivos linha a linha,
+                                trabalhando com memória dinâmica,
+                                ponteiros, buffers e variáveis static.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>C</span>
+                                <span>Unix</span>
+                                <span>Memory</span>
+
+                            </div>
+
+                            <div class="project-links">
+
+                                <a
+                                    href="https://github.com/MariaAndrade-25/get_next_line"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fab fa-github"></i>
+
+                                    Código
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- REST API -->
+
+                    <article class="project-card fade-in">
+
+                        <div class="project-content">
+
+                            <span class="project-number">
+                                02
+                            </span>
+
+                            <h3>
+                                REST API — Biblioteca Digital
+                            </h3>
+
+                            <p>
+                                API backend desenvolvida com Flask,
+                                SQLAlchemy e SQLite, seguindo princípios
+                                REST e implementando operações de CRUD.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>SQL</span>
+
+                            </div>
+
+                            <div class="project-links">
+
+                                <a
+                                    href="https://github.com/MariaAndrade-25/biblioteca-api-flask"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fab fa-github"></i>
+
+                                    Código
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CI/CD -->
+
+                    <article class="project-card fade-in">
+
+                        <div class="project-content">
+
+                            <span class="project-number">
+                                03
+                            </span>
+
+                            <h3>
+                                Pipeline CI/CD
+                            </h3>
+
+                            <p>
+                                Projeto voltado à automação de processos
+                                de desenvolvimento utilizando GitHub
+                                Actions, integração contínua e práticas
+                                de DevOps.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>GitHub Actions</span>
+                                <span>CI/CD</span>
+                                <span>DevOps</span>
+
+                            </div>
+
+                            <div class="project-links">
+
+                                <a
+                                    href="https://github.com/MariaAndrade-25?tab=repositories"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fab fa-github"></i>
+
+                                    GitHub
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PORTFOLIO -->
+
+                    <article class="project-card fade-in">
+
+                        <div class="project-content">
+
+                            <span class="project-number">
+                                04
+                            </span>
+
+                            <h3>
+                                Portfólio Pessoal
+                            </h3>
+
+                            <p>
+                                Site pessoal desenvolvido com HTML,
+                                CSS e JavaScript, com foco em
+                                responsividade, acessibilidade e
+                                apresentação profissional.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+                            <div class="project-links">
+
+                                <a
+                                    href="https://github.com/MariaAndrade-25/MariaAndrade-25.github.io"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    <i class="fab fa-github"></i>
+
+                                    Código
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section
+            id="contact"
+            class="contact"
+            aria-labelledby="contact-title">
+
+            <div class="container">
+
+                <div class="section-header fade-in">
+
+                    <span class="section-label">
+                        05
+                    </span>
+
+                    <h2 id="contact-title">
+                        Vamos conversar?
+                    </h2>
+
+                    <div class="line"></div>
+
+                </div>
+
+
+                <div class="contact-wrapper fade-in">
+
+                    <div class="contact-info">
+
+                        <h3>
+                            Entre em contato
+                        </h3>
+
+                        <p>
+                            Estou aberta a oportunidades, projetos e
+                            conversas sobre tecnologia, Engenharia de
+                            Software, DevOps e Cloud.
+                        </p>
+
+
+                        <div class="contact-item">
+
+                            <i
+                                class="fas fa-envelope"
+                                aria-hidden="true">
+                            </i>
+
+                            <div>
+
+                                <h4>
+                                    E-mail
+                                </h4>
+
+                                <p>
+                                    <a
+                                        href="mailto:mariadeandrade@hotmail.com.br">
+                                        mariadeandrade@hotmail.com.br
+                                    </a>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <i
+                                class="fas fa-map-marker-alt"
+                                aria-hidden="true">
+                            </i>
+
+                            <div>
+
+                                <h4>
+                                    Localização
+                                </h4>
+
+                                <p>
+                                    São Paulo, SP — Brasil
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="social-large"
+                            aria-label="Redes sociais">
+
+                            <a
+                                href="https://github.com/MariaAndrade-25"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub">
+
+                                <i class="fab fa-github"></i>
+
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/in/maria-andrade-97241i"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn">
+
+                                <i class="fab fa-linkedin"></i>
+
+                            </a>
+
+                            <a
+                                href="mailto:mariadeandrade@hotmail.com.br"
+                                aria-label="E-mail">
+
+                                <i class="fas fa-envelope"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FORM -->
+
+                    <form
+                        class="contact-form"
+                        id="contactForm"
+                        action="mailto:mariadeandrade@hotmail.com.br"
+                        method="post"
+                        enctype="text/plain">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Nome
+                            </label>
+
+                            <input
+                                id="name"
+                                name="name"
+                                type="text"
+                                placeholder="Seu nome"
+                                autocomplete="name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                E-mail
+                            </label>
+
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="seu@email.com"
+                                autocomplete="email"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Assunto
+                            </label>
+
+                            <input
+                                id="subject"
+                                name="subject"
+                                type="text"
+                                placeholder="Assunto"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Mensagem
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Escreva sua mensagem..."
+                                rows="6"
+                                required></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn">
+
+                            Enviar mensagem
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <p>
+                    &copy; 2026 Maria Andrade.
+                    Todos os direitos reservados.
+                </p>
+
+                <p>
+                    Desenvolvido com
+                    <span
+                        class="heart"
+                        aria-label="amor">
+                        ❤️
+                    </span>
+                    e código.
+                </p>
+
+            </div>
+
         </div>
-    </div>
-</section>
 
-<!-- ========================== FOOTER ========================== -->
+    </footer>
 
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <p>&copy; 2026 Maria Andrade. Todos os direitos reservados.</p>
-            <p>Desenvolvido com <span class="heart">❤️</span> e muita dedicação</p>
-        </div>
-    </div>
-</footer>
 
-<!-- Scripts -->
-<script src="script.js"></script>
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
 
 </body>
+
 </html>
