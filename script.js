@@ -1,164 +1,240 @@
-/* =========================
-   DIGITAÇÃO
-========================= */
+document.addEventListener("DOMContentLoaded", () => {
 
+    /* =====================================================
+       DIGITAÇÃO
+    ===================================================== */
 
-const typingElement = document.getElementById("typing");
+    const typingElement = document.getElementById("typing");
 
+    const words = [
+        "Software Engineer",
+        "DevOps Engineer",
+        "Cloud Enthusiast",
+        "Backend Developer"
+    ];
 
-const words = [
+    let wordIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
 
-    "DevOps Engineer",
+    function type() {
 
-    "Software Engineer",
-
-    "Cloud Enthusiast",
-
-    "Backend Developer"
-
-];
-
-
-let wordIndex = 0;
-
-let charIndex = 0;
-
-let deleting = false;
-
-
-
-function typing(){
-
-
-    const currentWord = words[wordIndex];
-
-
-    if(!deleting){
-
-
-        typingElement.textContent =
-        currentWord.substring(0,charIndex++);
-
-
-
-        if(charIndex > currentWord.length){
-
-            deleting = true;
-
-            setTimeout(typing,1200);
-
+        if (!typingElement) {
             return;
-
         }
 
+        const currentWord = words[wordIndex];
 
+        if (!deleting) {
 
-    } else {
+            typingElement.textContent =
+                currentWord.substring(0, charIndex);
 
+            charIndex++;
 
-        typingElement.textContent =
-        currentWord.substring(0,charIndex--);
+            if (charIndex > currentWord.length) {
 
+                deleting = true;
 
+                setTimeout(type, 1500);
 
-        if(charIndex < 0){
-
-            deleting=false;
-
-            wordIndex++;
-
-            if(wordIndex >= words.length){
-
-                wordIndex=0;
-
+                return;
             }
 
-        }
+            setTimeout(type, 85);
 
+        } else {
+
+            typingElement.textContent =
+                currentWord.substring(0, charIndex);
+
+            charIndex--;
+
+            if (charIndex < 0) {
+
+                deleting = false;
+
+                charIndex = 0;
+
+                wordIndex++;
+
+                if (wordIndex >= words.length) {
+                    wordIndex = 0;
+                }
+
+                setTimeout(type, 300);
+
+                return;
+            }
+
+            setTimeout(type, 45);
+        }
+    }
+
+    if (typingElement && words.length > 0) {
+        type();
+    }
+
+
+    /* =====================================================
+       MENU MOBILE
+    ===================================================== */
+
+    const hamburger =
+        document.querySelector(".hamburger");
+
+    const navMenu =
+        document.querySelector(".nav-menu");
+
+    if (hamburger && navMenu) {
+
+        hamburger.addEventListener("click", () => {
+
+            const isOpen =
+                navMenu.classList.toggle("active");
+
+            hamburger.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+        });
+
+
+        /* Fecha o menu ao clicar em um link */
+
+        const navLinks =
+            navMenu.querySelectorAll("a");
+
+        navLinks.forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                navMenu.classList.remove("active");
+
+                hamburger.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            });
+
+        });
 
     }
 
 
-    setTimeout(typing, deleting ? 50 : 100);
+    /* =====================================================
+       SCROLL ANIMATION
+    ===================================================== */
+
+    const animatedElements =
+        document.querySelectorAll(".fade-in");
+
+    if ("IntersectionObserver" in window) {
+
+        const observer =
+            new IntersectionObserver(
+                (entries, observerInstance) => {
+
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("show");
+
+                            observerInstance.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
 
 
-}
+        animatedElements.forEach(element => {
+
+            observer.observe(element);
+
+        });
+
+    } else {
+
+        animatedElements.forEach(element => {
+
+            element.classList.add("show");
+
+        });
+
+    }
 
 
+    /* =====================================================
+       ANO DO FOOTER
+    ===================================================== */
 
-typing();
+    const footerYear =
+        document.querySelector(".footer-content p");
 
+    if (footerYear) {
 
+        footerYear.innerHTML =
+            `&copy; ${new Date().getFullYear()} Maria Andrade. Todos os direitos reservados.`;
 
-
-
-
-
-/* =========================
- SCROLL ANIMATION
-========================= */
-
-
-const elements =
-document.querySelectorAll(
-".project-card, .card"
-);
+    }
 
 
+    /* =====================================================
+       FECHAR MENU AO REDIMENSIONAR
+    ===================================================== */
 
-const observer =
-new IntersectionObserver(
-(entries)=>{
+    window.addEventListener("resize", () => {
+
+        if (
+            window.innerWidth > 700 &&
+            navMenu &&
+            hamburger
+        ) {
+
+            navMenu.classList.remove("active");
+
+            hamburger.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        }
+
+    });
 
 
-entries.forEach(entry=>{
+    /* =====================================================
+       ESC FECHA MENU
+    ===================================================== */
 
+    document.addEventListener("keydown", event => {
 
-if(entry.isIntersecting){
+        if (
+            event.key === "Escape" &&
+            navMenu &&
+            hamburger
+        ) {
 
+            navMenu.classList.remove("active");
 
-entry.target.classList.add("show");
+            hamburger.setAttribute(
+                "aria-expanded",
+                "false"
+            );
 
+        }
 
-}
-
+    });
 
 });
-
-
-},
-{
-threshold:.2
-}
-
-);
-
-
-
-elements.forEach(
-element=>observer.observe(element)
-);
-
-
-
-
-
-
-
-/* =========================
- ANO FOOTER
-========================= */
-
-
-const footer =
-document.querySelector("footer p");
-
-
-
-if(footer){
-
-
-footer.innerHTML =
-`© ${new Date().getFullYear()} Maria Andrade`;
-
-}
