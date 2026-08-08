@@ -1221,21 +1221,22 @@ footer {
 ========================================================= */
 
 .fade-in {
-    opacity: 0;
-
-    transform: translateY(25px);
-
+    opacity: 1;
+    transform: none;
     transition:
         opacity 0.8s ease,
         transform 0.8s ease;
 }
 
-.fade-in.show {
-    opacity: 1;
-
-    transform: translateY(0);
+.fade-in.animate {
+    opacity: 0;
+    transform: translateY(25px);
 }
 
+.fade-in.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 /* =========================================================
    SELECTION
