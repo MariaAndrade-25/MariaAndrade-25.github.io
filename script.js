@@ -80,17 +80,17 @@ document.addEventListener("DOMContentLoaded", () => {
        MENU MOBILE
     ===================================================== */
 
-    const hamburger =
+     hamburger =
         document.querySelector(".hamburger");
 
-    const navMenu =
+     navMenu =
         document.querySelector(".nav-menu");
 
     if (hamburger && navMenu) {
 
         hamburger.addEventListener("click", () => {
 
-            const isOpen =
+             isOpen =
                 navMenu.classList.toggle("active");
 
             hamburger.setAttribute(
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         /* Fecha o menu ao clicar em um link */
 
-        const navLinks =
+         navLinks =
             navMenu.querySelectorAll("a");
 
         navLinks.forEach(link => {
@@ -128,52 +128,54 @@ document.addEventListener("DOMContentLoaded", () => {
        SCROLL ANIMATION
     ===================================================== */
 
+/* =====================================================
+   SCROLL ANIMATION
+===================================================== */
+
     const animatedElements =
-        document.querySelectorAll(".fade-in");
+    document.querySelectorAll(".fade-in");
 
-    if ("IntersectionObserver" in window) {
+animatedElements.forEach(element => {
+    element.classList.add("animate");
+});
 
-        const observer =
-            new IntersectionObserver(
-                (entries, observerInstance) => {
+if ("IntersectionObserver" in window) {
 
-                    entries.forEach(entry => {
+    const observer =
+        new IntersectionObserver(
+            (entries, observerInstance) => {
 
-                        if (entry.isIntersecting) {
+                entries.forEach(entry => {
 
-                            entry.target.classList.add("show");
+                    if (entry.isIntersecting) {
 
-                            observerInstance.unobserve(
-                                entry.target
-                            );
+                        entry.target.classList.add("show");
 
-                        }
+                        observerInstance.unobserve(
+                            entry.target
+                        );
 
-                    });
+                    }
 
-                },
-                {
-                    threshold: 0.12
-                }
-            );
+                });
 
+            },
+            {
+                threshold: 0.08
+            }
+        );
 
-        animatedElements.forEach(element => {
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
 
-            observer.observe(element);
+} else {
 
-        });
+    animatedElements.forEach(element => {
+        element.classList.add("show");
+    });
 
-    } else {
-
-        animatedElements.forEach(element => {
-
-            element.classList.add("show");
-
-        });
-
-    }
-
+}
 
     /* =====================================================
        ANO DO FOOTER
